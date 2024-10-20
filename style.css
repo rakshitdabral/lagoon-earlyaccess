@@ -1,5 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"); */
-
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
@@ -188,6 +188,16 @@ p {
     height: 100px !important;
     max-width: 90%;
   }
+  .banner-btn {
+    padding: 16px 24px !important;
+    border-radius: 12px !important;
+  }
+  .fontimg {
+    padding-bottom: 3.4rem !important;
+  }
+}
+.content-1 {
+  margin-top: 17vh;
 }
 
 @media (max-width: 450px) {
@@ -232,6 +242,9 @@ p {
   .content2-image img,
   .content3-img img {
     max-width: 87%;
+  }
+  .content-1 {
+    margin-top: 8vh !important;
   }
 }
 
@@ -500,7 +513,7 @@ p {
 
 .m6-content {
   max-width: 95%;
-  padding-bottom: 25%;
+  padding-bottom: 3%;
   display: flex;
   align-items: center;
   justify-content: space-between;
