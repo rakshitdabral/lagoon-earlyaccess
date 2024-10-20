@@ -205,7 +205,8 @@ p {
     height: 15px !important;
   }
   .fontimg {
-    height: 35px;
+    height: 23px;
+    padding-bottom: 10px;
   }
   .rating-image img {
     height: 24px !important;
@@ -581,7 +582,7 @@ footer {
   text-decoration: none;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 455px) {
   .footer-a {
     height: auto;
     font-size: 9px;
