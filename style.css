@@ -196,7 +196,7 @@ p {
 }
 
 .footer-image {
-  background-image: url(/ae/Images/m6-img.png);
+  background-image: url(/Images/m6-img.png);
   background-position: center;
   background-size: cover;
   height: 50vh;
@@ -282,7 +282,7 @@ p {
 .main-4 {
   height: 75vh;
   width: 100%;
-  background: url("/ae/Images/main-4-bg\ \(1\).png");
+  background: url("/Images/main-4-bg\ \(1\).png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
