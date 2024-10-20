@@ -32,7 +32,7 @@
     <header class="">
       <div class="nav-box">
         <nav class="navbar navbar-dark">
-          <div class="container-fluid">
+          <div class="container-fluid d-flex align-content-center">
             <a href="" class="navbar-brand fw-bold" style="font-size: 28px"
               ><img
                 class="me-1 nav-img"
@@ -50,17 +50,10 @@
                 <a class="nav-link" href="">Features</a>
               </li>
 
-              <li class="nav-item me-4">
+              <li class="nav-item">
                 <button
                   class="btn nav-btn"
-                  style="
-                    background-color: #004838;
-                    color: #e2fb6c;
-                    /* border-radius: 8px;
-                    padding-right: 6px;
-                    padding-top: 9px;
-                    padding-bottom: 9px; */
-                  "
+                  style="background-color: #004838; color: #e2fb6c"
                   onclick="scrollToEarlyAccess()"
                 >
                   Get early access
@@ -73,7 +66,7 @@
     </header>
     <main>
       <section class="content-1 mt-5">
-        <div class="container-fluid text-center pt-5">
+        <div class="container-fluid text-center content1-blog">
           <a
             style="
               margin-bottom: 0px !important;
@@ -87,11 +80,11 @@
             class="fw-bold"
             style="
               font-family: 'Plus Jakarta Sans', sans-serif;
-              line-height: 0.7px;
+              line-height: 0.5px;
             "
           >
             <span>
-              <img class="pb-4" src="/Images/Group 515.png" alt="" />
+              <img class="pb-4 fontimg" src="/Images/Group 515.png" alt="" />
             </span>
             Your own google form <br />
             for
@@ -107,28 +100,21 @@
             >
             <span>
               <img
+                class="you-img"
                 src="/Images/div.cursor-line.png"
                 alt=""
                 style="height: 48px"
               />
             </span>
           </h1>
-          <p style="color: #3f4654; font-weight: 400">
+          <p style="color: #3f4654; font-weight: 400; margin-bottom: 5px">
             With Lagoon collect,score and filter out candidates without touching
             <br />
             their resumes - simplifying screening to seconds.
           </p>
           <button
-            class="btn mb-2 mt-2"
-            style="
-              background-color: #004838;
-              color: #e2fb6c;
-              padding-top: 16px;
-              padding-bottom: 16px;
-              border-radius: 12px;
-              padding-right: 17px;
-              padding-left: 17px;
-            "
+            class="btn my-1 banner-btn"
+            style="background-color: #004838; color: #e2fb6c"
             onclick="scrollToEarlyAccess()"
           >
             <img
@@ -139,7 +125,7 @@
             <span>Get early access</span>
           </button>
 
-          <div class="rating-image mt-4">
+          <div class="rating-image mt-3">
             <img src="/Images/home-rating.png" alt="rating-image" />
           </div>
 
@@ -155,14 +141,7 @@
               Imagine a Google form, <br />
               personalized for your hiring needs...
             </h1>
-            <p
-              style="
-                color: #dee2e6;
-                font-weight: 400;
-                font-size: 16px;
-                margin-top: 26px;
-              "
-            >
+            <p style="color: #dee2e6; font-weight: 400; font-size: 16px">
               choose what matters most to you and filter out applicants without
               <br />touching their resumes
             </p>
@@ -194,13 +173,10 @@
         </div>
       </section>
       <section class="content-3">
-        <div class="container-fluid" style="padding-top: 40px !important">
+        <div class="container-fluid" style="padding-top: 0.5vh !important">
           <div class="d-flex">
             <div class="col-8" style="width: 60%">
-              <main
-                class="content3-text"
-                style="margin-top: 10px; margin-left: 1rem"
-              >
+              <main class="content3-text">
                 <h1 style="color: #004838; font-weight: 600">
                   Where you can cut <br />
                   down screening time by 90%...
@@ -250,7 +226,7 @@
               </div>
             </div>
           </div>
-          <div class="content3-img mb-5 pb-5">
+          <div class="content3-img mb-5">
             <img src="/Images/m3-main-img.png" alt="" />
             <!-- <div class="overlay-text">Scorecard curated just for HRs!
             <img class="arrow-2" src="../Images/image copy 5.png" alt="" style="height: auto; width: 35px" />
@@ -280,7 +256,7 @@
           </div>
         </div>
       </section>
-      <section class="content-5 mt-5">
+      <section class="content-5" style="margin-top: 4vh">
         <div class="container-fluid">
           <div class="text-center">
             <h1 style="font-weight: 600; color: #111827">
@@ -302,7 +278,7 @@
                 src="/Images/m5-main-img.png"
                 alt=""
                 class="content5-image"
-                style="margin-top: 2.5rem"
+                style="margin-top: 1vh"
               />
             </div>
           </div>
@@ -317,8 +293,8 @@
             <div class="m6-heading">
               <h1 style="color: #ffffff; font-size: 49px; font-weight: 700">
                 Create your next form <br />
-                <span
-                  >with
+                with
+                <span>
                   <span
                     style="
                       font-style: italic;
@@ -330,11 +306,14 @@
                   >
                 </span>
               </h1>
-              <div class="m6-button">
+              <div class="m6-button d-flex justify-content-start">
                 <button
-                  class="m6-btn"
+                  class="m6-btn btn"
                   onclick="scrollToEarlyAccess()"
-                  style="margin-left: 1rem"
+                  style="
+                    border: 0.5px solid #ffffff;
+                    background: rgba(255, 255, 255, 0.1) !important;
+                  "
                 >
                   <a href="#early-access">Get early access</a>
                 </button>
