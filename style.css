@@ -367,12 +367,13 @@ p {
 }
 
 .m4-main-img {
-  height: auto;
-  max-width: 60%;
+  height: 11vh;
+  max-width: 81%;
 }
 
 .m4-input {
   height: 3.981rem;
+  padding: 40px 9px;
   background: linear-gradient(
     180deg,
     rgba(0, 187, 255, 0.1) 0%,
@@ -426,7 +427,7 @@ p {
 
 @media (min-width: 768px) {
   .m4-content input {
-    width: 300px;
+    width: 342px;
   }
 }
 
