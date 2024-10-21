@@ -108,6 +108,7 @@ p {
 .content-1 {
   margin-bottom: 1vh;
   margin-top: 1vh;
+  /* font-weight: 600; */
 }
 
 @media (min-width: 768px) {
@@ -140,6 +141,7 @@ p {
 .rating-image {
   max-width: 100%;
   height: auto;
+  margin-top: 3rem;
 }
 
 .rating-image img {
@@ -351,7 +353,7 @@ p {
 }
 
 .main-4 {
-  height: 40vh;
+  height: 70vh;
   width: 100%;
   background: url("/Images/main-4-bg\ \(1\).png");
   background-size: cover;
@@ -366,15 +368,11 @@ p {
 
 .m4-main-img {
   height: auto;
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .m4-input {
-  /* div.framer-wosavx */
-
-  /* position: absolute; */
-  height: 4.981rem;
-
+  height: 3.981rem;
   background: linear-gradient(
     180deg,
     rgba(0, 187, 255, 0.1) 0%,
