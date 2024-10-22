@@ -112,21 +112,50 @@
         </div>
 
         <!-- Ensure the margin-top for the rating image is applied -->
-        <div class="rating-image" style="margin-top: -5px; margin-left: 34rem; display: flex; align-items: center;">
+        <div class="rating-image text-center"
+          style="margin-top: -5px; display: flex; align-items: center; justify-content: center;">
           <!-- <img src="/Images/Image [h-12].png" alt="Rating Image" style="height: auto; width: 50px;"> Adjust the width accordingly -->
-  
-          <span style="margin-left: 1rem; display: flex; flex-direction: column; align-items: flex-start;">
-            <div class="star-rating" style="display: flex;">
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
+
+          <div class="rating-Box">
+            <div class="rating-pictures ratingpic1"></div>
+            <div class="rating-pictures ratingpic2"></div>
+            <div class="rating-pictures ratingpic3"></div>
+            <div class="rating-pictures ratingpic4"></div>
+            <div class="rating-pictures ratingpic5"></div>
+          </div>
+          <div class="starBox">
+            <div class="star-rating" style="display: flex; gap: 7px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#003026" viewBox="0 0 256 256">
+                <path
+                  d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"
+                  stroke="white" stroke-width="8"></path>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#003026" viewBox="0 0 256 256">
+                <path
+                  d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"
+                  stroke="white" stroke-width="2"></path>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#003026" viewBox="0 0 256 256">
+                <path
+                  d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"
+                  stroke="white" stroke-width="2"></path>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#003026" viewBox="0 0 256 256">
+                <path
+                  d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"
+                  stroke="white" stroke-width="2"></path>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#003026" viewBox="0 0 256 256">
+                <path
+                  d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"
+                  stroke="white" stroke-width="2"></path>
+              </svg>
             </div>
-            <p class="rating-text" style="margin-top: 0.5rem; font-size: 15px; color: #111827; font-weight: 500;">
+
+            <p class="rating-text" style="margin-top: 0.4rem; font-size: 15px; color: #111827; font-weight: 500;">
               931 HRs have already shown interest
             </p>
-          </span>
+          </div>
         </div>
 
       </div>
@@ -264,29 +293,41 @@
           <!-- Top Row: Two Images -->
           <!-- card-1 -->
           <div class="card" style="width: 604px; 
-          height: 400px;  /* Reduced the height from 458px to 400px */
+          height: 400px;  /* Adjusted the height */
           border-radius: 20.03px; 
           border: 1px solid #D3D5D8; 
           background: linear-gradient(180deg, #F3FFF3 0%, #00775D 100%);
           padding: 20px;
           display: flex;
           flex-direction: column;
-          justify-content: space-between;">
-            <!-- Header Text -->
-            <h1 style="color: #041527; font-weight: 700; font-size: 23px; margin-bottom: 10px;">
-              Job Description Generator
-            </h1>
-            <!-- Description Text -->
-            <p style="font-size: 16px; font-weight: 500; color: #041527; margin-bottom: 20px;">
-              Our AI-powered tool generates a personalized job description
-              that align with your requirement.
-            </p>
-            <!-- Image Section -->
-            <div style="flex-grow: 1; display: flex; justify-content: center; align-items: flex-end; ">
-              <img src="/Images/1.1.png" alt="Hiring Form Template Preview"
-                style="max-width: 100%; height: auto; border-top-left-radius: 12px; margin-top: 1.253rem; margin-left: 2.5rem;" />
-            </div>
+          justify-content: space-between;
+          position: relative; /* Added to use absolute positioning */
+        ">
+          <!-- Header Text -->
+          <h1 style="color: #041527; font-weight: 700; font-size: 23px; margin-bottom: 10px;">
+            Job Description Generator
+          </h1>
+        
+          <!-- Button Section -->
+          <button style="position: absolute; bottom: 12.2rem; right: 15px; background-color: #004838; 
+          color: white; border: none; padding: 5px 8px; border-radius: 3px; cursor: pointer; z-index: 1;">
+            <img src="/Images/l.png" alt="" style="margin-right: -2px;">
+            Generate
+          </button>
+        
+          <!-- Description Text -->
+          <p style="font-size: 16px; font-weight: 500; color: #041527; margin-bottom: 20px;">
+            Our AI-powered tool generates a personalized job description
+            that aligns with your requirement.
+          </p>
+        
+          <!-- Image Section -->
+          <div style="flex-grow: 1; display: flex; justify-content: center; align-items: flex-end;">
+            <img src="/Images/1.1.png" alt="Hiring Form Template Preview"
+              style="max-width: 100%; height: auto; border-top-left-radius: 12px; margin-top: 1.253rem; margin-left: 2.5rem;" />
           </div>
+        </div>
+        
 
           <!-- card-2 -->
           <div class="card" style="width: 604px; 
