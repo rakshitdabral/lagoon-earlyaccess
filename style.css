@@ -151,13 +151,55 @@ p {
   max-width: 490px;
 }
 
-.home-image img {
+/* .home-image img {
   margin-top: 17vh;
   height: auto;
   width: 90%;
   max-width: fit-content;
+  margin-left: 4rem;
   /* box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2); */
+/* } */ 
+
+.home-image img {
+  margin-top: 16vh;
+  height: auto;
+  width: 90%;
+  max-width: fit-content;
+  margin-left: 4rem;
+  transform: translateY(100px); /* Image starts lower */
+  opacity: 0; /* Hidden initially */
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Smooth transition */
 }
+
+.home-image img.visible {
+  transform: translateY(0); /* Image moves to its normal position */
+  opacity: 1; /* Fully visible */
+}
+
+.star-rating {
+  display: flex;
+  gap: 5px;
+  
+}
+
+.star {
+  font-size: 3rem;
+  color: #004838; /* Set the star color to green */
+}
+
+
+
+
+.bento-card {
+  transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth scaling and shadow */
+}
+
+.bento-card:hover {
+  transform: scale(1.05); /* Slightly zoom the card */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+
 
 @media (min-width: 768px) {
   .home-image img,
@@ -300,6 +342,16 @@ p {
   left: 35%;
   transform: translate(-65%, -45%);
   width: 200px;
+}
+
+.card {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-15px); 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
 }
 
 .arrow-2 {
