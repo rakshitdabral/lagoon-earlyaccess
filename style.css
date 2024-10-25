@@ -121,6 +121,25 @@ p {
   .content-1 h1 {
     /* line-height: 0.5 !important; */
   }
+  .content-2 h1,
+  .content-3 h1 {
+    font-size: 12px !important;
+    font-weight: 500;
+    line-height: 1 !important;
+    margin-top: 1rem !important;
+  }
+  .content-2 p {
+    margin: 0px !important;
+  }
+  .content-3 img {
+    margin-bottom: 0px !important;
+  }
+  .content-3 button {
+    margin-bottom: 2.5rem !important;
+  }
+  .content3-text {
+    margin-top: 0px !important;
+  }
 }
 .content-1 p {
   font-family: "inter", sans-serif;
@@ -135,7 +154,7 @@ p {
 }
 
 .content3-text {
-  padding-left: 10%;
+  padding-left: 7%;
 }
 
 .rating-image {
@@ -165,7 +184,7 @@ p {
   height: auto;
   width: 90%;
   max-width: fit-content;
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
   transform: translateY(100px); /* Image starts lower */
   opacity: 0; /* Hidden initially */
   transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Smooth transition */
@@ -174,16 +193,6 @@ p {
 .home-image img.visible {
   transform: translateY(0); /* Image moves to its normal position */
   opacity: 1; /* Fully visible */
-}
-
-.star-rating {
-  display: flex;
-  gap: 7px;
-}
-
-.star {
-  font-size: 2.1rem;
-  color: #004838; /* Set the star color to green */
 }
 
 .bento-card {
@@ -214,17 +223,23 @@ p {
   /* background-color: red; */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
+  .col-3 {
+    margin-top: 17px;
+  }
   .content3-images {
     height: 45px !important;
     max-width: 90%;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 759px) {
   .content-3images img {
     height: 100px !important;
     max-width: 90%;
+  }
+  .col-3 {
+    margin-top: 13%;
   }
   .banner-btn {
     padding: 16px 24px !important;
@@ -234,71 +249,237 @@ p {
     padding-bottom: 3.4rem !important;
   }
 }
+
 .content-1 {
   margin-top: 17vh;
 }
 
+/* Popup common styles */
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease, box-shadow 0.5s ease;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 450px) {
+  .popup {
+    padding: 1px 4px;
+  }
+  .icon {
+    height: 20px !important;
+    width: 20px !important;
+  }
+  .popup-icon-img {
+    height: 20px !important;
+    width: 20px !important;
+  }
+  .close-icon {
+    font-size: 13px !important;
+    margin-left: 5px !important;
+  }
+}
+
+.popup-icon-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Icon styling */
+.icon {
+  border-radius: 50%; /* Fully rounded */
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(235, 87, 87, 0.1); /* Light red background */
+  box-shadow: 0 2px 4px rgba(144, 238, 144, 0.2); /* Light red shadow */
+}
+
+.icon svg {
+  width: 16px;
+  height: 16px;
+  fill: #eb5757; /* Red color for the cross */
+}
+
+/* Close icon styling */
+.close-icon {
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#main-4-input {
+  color: black; /* Set text color to black */
+}
+
+.popup .close-icon {
+  color: green; /* Set the color to green */
+}
+
+/* Error Popup Styles */
+.error-popup {
+  background-color: #ffffff;
+  color: #28292a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Success Popup Styles */
+.success-popup {
+  background-color: #ffffff;
+  color: #28292a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  padding: 8px 30px;
+}
+
+/* Popup text styles */
+.popup-text {
+  margin: 10px;
+  font-size: 16px;
+}
+
+.star-rating {
+  display: flex;
+  justify-content: center;
+}
+
 .rating-Box {
   height: 70px;
-  width: 290px;
+  width: 275px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  border: 2px;
-  border: #ffffff;
 }
 
 .rating-pictures {
   position: absolute;
   height: 60px;
-  width: 65px;
+  width: 60px;
   border-radius: 50%;
-  /* border-radius: 50%; */
-  border: 0.5px solid #ffffff; /* Changed to include solid border */
-  box-shadow: 0 0 0 2px #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .ratingpic1 {
   background-image: url(/Images/IMG-1.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   left: 0;
 }
 .ratingpic2 {
   background-image: url(/Images/IMG-2.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  left: 55px;
-  border: 2px;
-  border: #ffffff;
+  left: 50px;
 }
 .ratingpic3 {
   background-image: url(/Images/IMG-3.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  left: 105px;
-  border: 2px;
-  border: #ffffff;
+  left: 100px;
 }
 .ratingpic4 {
   background-image: url(/Images/IMG-4.jpg);
   background-size: cover;
+  background-position: ;
   background-repeat: no-repeat;
-  left: 155px;
+  left: 150px;
 }
 .ratingpic5 {
   background-image: url(/Images/IMG-5.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  left: 205px;
+  left: 200px;
 }
 
 .starBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 15px;
+}
+
+.star-svg {
+  margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+  .star-rating {
+    justify-content: start;
+    margin-left: 12px;
+  }
+  .rating-Box {
+    height: 20px;
+    width: 80px;
+  }
+  .rating-pictures {
+    height: 20px;
+    width: 20px;
+    border: 0.1px solid white;
+  }
+  .ratingpic1 {
+    left: 0;
+  }
+  .ratingpic2 {
+    left: 16px;
+  }
+  .ratingpic3 {
+    left: 32px;
+  }
+  .ratingpic4 {
+    left: 48px;
+  }
+  .ratingpic5 {
+    left: 64px;
+  }
+  .star-svg {
+    height: 6px;
+    width: 6px;
+    margin-right: 0.2px !important;
+  }
+  .rating-text {
+    font-size: 6px;
+    display: inline-block;
+    text-align: start;
+    width: 84px;
+    margin: 3px 0px 0px 12px !important;
+  }
+  .flag {
+    right: -14px !important;
+  }
+  .text-for {
+    margin-left: 0 !important;
+  }
+}
+
+.content-1 .banner-btn {
+  margin-bottom: 35px !important;
 }
 
 @media (max-width: 450px) {
@@ -306,36 +487,45 @@ p {
     height: 15px !important;
   }
   .fontimg {
-    height: 23px;
-    padding-bottom: 10px;
+    height: 23px !important;
+    padding-bottom: 10px !important;
   }
   .rating-image img {
     height: 24px !important;
-    width: auto;
+    width: auto !important;
   }
   .home-image img {
-    margin-top: 4vh;
+    margin-top: 4vh !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
   }
   .banner-btn span {
-    font-size: 10px !important;
+    font-size: 8px;
     /* padding: 4px 4px !important; */
   }
   .banner-btn img {
     height: 12px !important;
     margin-right: 2px !important;
   }
+  .content-1 .banner-btn {
+    margin-bottom: 10px !important;
+  }
   .content-1 a {
-    font-size: 8px;
+    font-size: 8px !important;
   }
   .content1-blog {
-    padding-top: 0vh;
+    padding-top: 0vh !important;
   }
   h1 {
     font-size: 15px !important;
   }
   p {
     font-size: 8px !important;
+    line-height: 1 !important;
+    margin: 8px 0px !important;
   }
+
   .btn {
     font-size: 8px !important;
     margin: 0px 0px !important;
@@ -343,10 +533,15 @@ p {
   }
   .content2-image img,
   .content3-img img {
-    max-width: 87%;
+    max-width: 87% !important;
   }
   .content-1 {
     margin-top: 8vh !important;
+  }
+  .star-img {
+    height: 13px;
+    width: 13px;
+    margin-bottom: 0px;
   }
 }
 
@@ -464,7 +659,7 @@ p {
 .main-4 {
   height: 81vh;
   width: 100%;
-  background: url("/Images/main-4-bg\ \(1\).png");
+  background: url(/Images/greenbag.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -489,7 +684,7 @@ p {
     rgba(196, 77, 255, 0.1) 100%
   );
   box-shadow: 0px 14.4913px 28.9826px rgba(0, 0, 0, 0.15);
-  border-radius: 26.0844px;
+  border-radius: 22.0844px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -505,7 +700,7 @@ p {
     #ffffff 100%
   );
   box-shadow: 0px 0.724566px 2.89826px rgba(0, 0, 0, 0.05);
-  border-radius: 18.8387px;
+  border-radius: 17.8387px;
   padding: 0 12px;
   display: flex;
   align-items: center;
@@ -541,35 +736,42 @@ p {
 }
 
 @media (max-width: 579px) {
+  .main-4 {
+    height: 33vh;
+  }
+
   .get-btn {
     font-size: 12px !important;
   }
   .m4-content input {
-    font-size: 12px !important;
-    width: 100px;
+    font-size: 8px !important;
+    max-width: 99px !important;
   }
   .m4-content-img {
-    height: 30px;
+    height: 19px;
   }
   .m4-content {
-    height: 45px;
+    height: 33px;
   }
   .m4-input {
-    height: 45px;
+    height: 33px;
+    padding: 20px 3px !important;
   }
   .m4-btn img {
     height: auto !important;
-    width: 20px !important;
+    width: 13px !important;
   }
   .m4-btn {
-    width: 110px !important;
-    height: 30px !important;
+    width: 89px !important;
+    height: 22px !important;
   }
   .m4-content {
-    min-width: 266px !important;
+    min-width: 218px !important;
   }
   .m4-main-img {
-    max-width: 90%;
+    /* max-width: 87%; */
+    height: 5vh;
+    max-width: 89%;
     margin-bottom: 0px !important;
   }
 }
@@ -586,7 +788,7 @@ p {
   box-shadow: 0px 0.523586px 0.523586px -0.905707px rgba(0, 0, 0, 0.18),
     0px 1.98983px 1.98983px -1.81141px rgba(0, 0, 0, 0.16),
     0px 8.69479px 8.69479px -2.71712px rgba(0, 0, 0, 0.063);
-  border-radius: 10.1439px;
+  border-radius: 6.1439px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -609,6 +811,92 @@ p {
 .content5-image {
   height: auto;
   max-width: 90%;
+}
+
+@media (max-width: 450px) {
+  /* Style for card container */
+  .card {
+    width: 46% !important;
+    height: auto !important; /* Adjust height to auto to fit content */ /* Add space between the cards */
+    padding: 10px 4px 4px 4px !important;
+  }
+
+  /* Adjust Header Font Size */
+  .card h1 {
+    font-size: 10px !important
+    ; /* Smaller font for header */
+    margin-bottom: 1.5px !important;
+  }
+
+  /* Adjust Paragraph Font Size */
+  .card p {
+    font-size: 8px; /* Smaller font for paragraph text */
+    margin: 3.5px 0px !important;
+    font-weight: 200 !important;
+  }
+
+  /* Button adjustments */
+  .card button {
+    bottom: 10px; /* Move button closer to the bottom */
+    right: 10px; /* Adjust button position */
+    padding: 4px 6px; /* Smaller padding for button */
+  }
+
+  /* Image adjustments */
+  .card img {
+    width: 100% !important; /* Adjust image width */
+    margin: 16px auto 1px auto !important; /* Center the image */
+    display: block; /* Ensure block display for proper alignment */
+    height: auto;
+  }
+
+  /* Special adjustment for card 3-5 for proper alignment */
+  .card:nth-child(3),
+  .card:nth-child(4),
+  .card:nth-child(5) {
+    width: 100%;
+  }
+
+  /* Adjustments to handle the column layout on smaller screens */
+  .card-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card1,
+  .card2 {
+    width: 45% !important;
+  }
+  .card3,
+  .card4,
+  .card5 {
+    width: 29% !important;
+  }
+
+  .card1 img {
+    width: 96%;
+    margin-left: 12px !important;
+  }
+
+  .card2 img {
+    width: 100% !important;
+  }
+
+  .card4 img {
+    margin-bottom: -18px !important;
+  }
+  .card1 button img {
+    width: 0% !important;
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  .card1 button {
+    padding: 0px 2px !important;
+    font-size: 6px !important;
+    bottom: 3.2rem !important;
+    right: 1px !important;
+  }
 }
 
 .main-6 {
@@ -656,7 +944,8 @@ p {
     font-size: 20px !important;
   }
   .m6-btn {
-    margin: 0xp !important;
+    margin-top: 0.5rem !important;
+    margin-left: 1rem !important;
   }
   .m6-content h1 {
     font-size: 12px !important;
@@ -693,13 +982,16 @@ footer {
 @media (max-width: 455px) {
   .footer-a {
     height: auto;
-    font-size: 9px;
+    font-size: 8px;
   }
   .footer a img {
     height: 40px;
   }
   .footer-img img {
-    height: 40px !important;
+    height: 30px !important;
+  }
+  .footer {
+    gap: 0.7rem !important;
   }
 }
 
