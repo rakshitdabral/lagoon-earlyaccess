@@ -196,6 +196,13 @@ p {
     transition: none;
     transform: none;
   }
+  .home-image img.visible{
+    transform: none;
+  }
+
+  .bento-card{
+    transition: none;
+  }
 }
 
 .bento-card:hover {
