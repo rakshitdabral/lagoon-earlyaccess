@@ -837,7 +837,7 @@ p {
 
 @media (max-width: 450px) {
   .card {
-  border-radius: 8px !important ;
+   border-radius: 8px !important ;
     width: 46% !important;
     height: auto !important;
     padding: 10px 4px 4px 4px !important;
