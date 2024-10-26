@@ -194,6 +194,7 @@ p {
 @media (max-width :450px) {
   .home-image img{
     transition: none;
+    transform: none;
   }
 }
 
