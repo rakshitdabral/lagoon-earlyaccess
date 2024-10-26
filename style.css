@@ -848,7 +848,7 @@ p {
   }
 
   .card p {
-    font-size: 3px;
+    font-size: 5px !important;
     margin: 3.5px 0px !important;
     font-weight: 100 !important;
   }
