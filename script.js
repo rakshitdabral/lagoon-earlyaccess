@@ -34,13 +34,13 @@ document
     const popup = document.getElementById("thank-you-popup");
     const popupText = popup.querySelector(".popup-text");
     const closeIcon = popup.querySelector(".close-icon");
-    const icon = popup.querySelector(".icon"); // Define icon
+    const icon = popup.querySelector(".icon"); 
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     
     popup.classList.remove("success-popup", "error-popup");
-    popup.classList.remove("show"); // Hide the popup initially
+    popup.classList.remove("show"); 
 
     if (emailInput.trim() === "") {
       popupText.innerHTML = "Please enter your email!";
