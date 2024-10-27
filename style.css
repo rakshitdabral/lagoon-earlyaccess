@@ -703,6 +703,12 @@ p {
   .main-6 h1 {
     font-size: 37px !important;
   }
+  .content-3 h1 {
+    font-size: 35px !important;
+  }
+  .content-3 p {
+    margin-top: 0.6rem !important;
+  }
 }
 
 @media (width: 344px) {
