@@ -139,6 +139,7 @@ p {
   }
   .content3-text {
     margin-top: 0px !important;
+    margin-left: 0% !important;
   }
 }
 .content-1 p {
@@ -170,7 +171,6 @@ p {
   max-width: 490px;
 }
 
-
 .home-image img {
   margin-top: 16vh;
   height: auto;
@@ -188,19 +188,20 @@ p {
 }
 
 .bento-card {
-  transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out; 
+  transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-@media (max-width :450px) {
-  .home-image img{
+@media (max-width: 450px) {
+  .home-image img {
     transition: none;
     transform: none;
   }
-  .home-image img.visible{
+  .home-image img.visible {
     transform: none;
+    opacity: 1;
   }
 
-  .bento-card{
+  .bento-card {
     transition: none;
   }
 }
@@ -686,6 +687,113 @@ p {
   gap: 1.5rem;
 }
 
+@media (width: 912px) {
+  .main-4 {
+    height: 33vh;
+  }
+  .m4-main-img {
+    margin-top: 9vh;
+  }
+  .home-image img {
+    margin-top: 7vh;
+  }
+  .content-1 {
+    margin-top: 10vh;
+  }
+  .main-6 h1 {
+    font-size: 37px !important;
+  }
+}
+
+@media (width: 344px) {
+  .main-4 {
+    height: 24vh !important;
+  }
+  .m4-main-img {
+    height: 4vh !important;
+  }
+}
+
+@media (width: 1080px) {
+  .content-1 {
+    margin-top: 7vh !important;
+  }
+  .home-image img {
+    margin-top: 4vh !important;
+  }
+  .main-4 {
+    height: 30vh;
+  }
+  .m4-main-img {
+    height: 8vh !important;
+  }
+}
+
+@media (width: 820px) {
+  .main-4 {
+    height: 39vh;
+  }
+  .m4-main-img {
+    height: 8vh;
+  }
+  .content-2 h1 {
+    font-size: 40px !important;
+  }
+  .content-3 h1 {
+    font-size: 31px !important;
+  }
+  .main-6 h1 {
+    font-size: 33px !important;
+  }
+  .home-image img {
+    margin-top: 7vh !important;
+  }
+}
+
+@media (width: 1024px) {
+  .main-4 {
+    height: 41vh;
+  }
+  .m4-main-img {
+    height: 9vh;
+  }
+  .content-3 h1 {
+    font-size: 39px !important;
+  }
+  .home-image img {
+    margin-top: 7vh;
+  }
+  .main-6 h1 {
+    font-size: 42px !important;
+  }
+  .content-1 {
+    margin-top: 10vh !important;
+  }
+}
+
+@media (width: 768px) {
+  .content-1 {
+    margin-top: 12vh;
+  }
+  .home-image img {
+    margin-top: 7vh;
+  }
+  .content-2 h1 {
+    font-size: 39px !important;
+  }
+  .content-3 h1 {
+    font-size: 29px !important;
+    line-height: 1.3 !important;
+  }
+  .content-3 p {
+    font-size: 17px !important;
+    margin-top: 0.6rem !important;
+  }
+  .main-6 h1 {
+    font-size: 31px !important;
+  }
+}
+
 .m4-main-img {
   height: 11vh;
   max-width: 81%;
@@ -837,7 +945,7 @@ p {
 
 @media (max-width: 450px) {
   .card {
-   border-radius: 8px !important ;
+    border-radius: 8px !important ;
     width: 46% !important;
     height: auto !important;
     padding: 10px 4px 4px 4px !important;
@@ -911,6 +1019,9 @@ p {
     font-size: 6px !important;
     bottom: 3.2rem !important;
     right: 1px !important;
+  }
+  .cardBox {
+    gap: 8px !important;
   }
 }
 
