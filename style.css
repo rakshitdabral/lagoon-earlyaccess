@@ -170,28 +170,53 @@ p {
   max-height: 60px;
   max-width: 490px;
 }
+/* @media (max-width : 450px) {
+  .home-image img{
+  transform: none;
+  transition: none;
+  opacity: 1;
+  }
+  .home-image img.visible {
+    transform: none; /* Image moves to its normal position */
+    /* opacity: 1;  */
+  /* }
+} */ 
 
-.home-image img {
-  margin-top: 16vh;
-  height: auto;
-  width: 90%;
-  max-width: fit-content;
-  /* margin-left: 4rem; */
-  transform: translateY(100px); /* Image starts lower */
-  opacity: 0; /* Hidden initially */
-  transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Smooth transition */
+@media (min-width:650px) {
+
+  .home-image img {
+    margin-top: 16vh;
+    height: auto;
+    width: 90%;
+    max-width: fit-content;
+    /* margin-left: 4rem; */
+    transform: translateY(100px); /* Image starts lower */
+    opacity: 0; /* Hidden initially */
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Smooth transition */
+  }
+  
+  .home-image img.visible {
+    transform: translateY(0); /* Image moves to its normal position */
+    opacity: 1; /* Fully visible */
+  }
+  
+  .bento-card {
+    transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
 }
+  
 
-.home-image img.visible {
-  transform: translateY(0); /* Image moves to its normal position */
-  opacity: 1; /* Fully visible */
-}
 
-.bento-card {
-  transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
-}
 
-@media (max-width: 450px) {
+  .home-image img {
+    margin-top: 16vh;
+    height: auto;
+    width: 90%;
+    max-width: fit-content;
+  }
+
+/* @media (max-width: 450px) {
   .home-image img {
     transition: none;
     transform: none;
@@ -204,7 +229,7 @@ p {
   .bento-card {
     transition: none;
   }
-}
+} */
 
 .bento-card:hover {
   transform: scale(1.05); /* Slightly zoom the card */
@@ -217,6 +242,17 @@ p {
   .content3-img img {
     max-width: 87%;
   }
+/*   
+    .home-image img{
+      transition: none;
+      opacity: 1;
+      transform: none;
+    }
+    .home-image .img-vissible{
+      transform: none;
+      opacity: 1;
+    } */
+  
 }
 
 .content-2 {
@@ -731,7 +767,13 @@ p {
     height: 30vh;
   }
   .m4-main-img {
-    height: 8vh !important;
+    height: 6vh !important;
+  }
+  .content-3 h1{
+    font-size: 40px !important;
+  }
+  .main-6 h1{
+    font-size: 44px !important;
   }
 }
 
