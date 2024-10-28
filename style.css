@@ -321,9 +321,42 @@ p {
   pointer-events: auto;
 }
 
+.p0 {
+  font-style: italic;
+  color: #004838;
+  font-weight: 500;
+  font-family: 'Libre Caslon Text', serif;
+  border-radius: 12px;
+  background-color: rgba(0, 72, 56, 0.25);
+  padding: 5px 10px;
+  position: relative;
+}
+
+/* @media (max-width: 450px) {
+  span.hiring-text {
+    /* border: 2px dashed #004838 !important; */
+    /* padding: 3px 8px !important; */
+    /* border-radius: 1px !important; */
+
+
+
+
 @media (max-width: 450px) {
   .popup {
     padding: 1px 4px;
+  }
+
+  .hiring-text{
+    /* border: 2px solid black !important;  */
+     /* border-radius: 5px !important;  */
+     border-top-left-radius:5px !important ;
+     border-bottom-left-radius:5px !important ;
+
+  }
+  .hiring-text {
+    border: #004838 !important; /* Force override */
+    padding: 1px 4px !important;
+    border-radius: 7px !important;
   }
   .icon {
     height: 20px !important;
@@ -514,7 +547,7 @@ p {
     margin: 3px 0px 0px 12px !important;
   }
   .flag {
-    right: -14px !important;
+    right: -21px !important;
   }
   .text-for {
     margin-left: 0 !important;
@@ -527,7 +560,9 @@ p {
 
 @media (max-width: 450px) {
   .you-img {
-    height: 15px !important;
+    height: 21px !important;
+    margin-top: 0.1rem;
+    /* margin-left: 10px !important; */
   }
   .fontimg {
     height: 23px !important;
@@ -916,6 +951,10 @@ p {
 @media (max-width: 579px) {
   .main-4 {
     height: 33vh;
+  }
+
+  .p0{
+    border-radius: 1px !important;
   }
 
   .get-btn {
